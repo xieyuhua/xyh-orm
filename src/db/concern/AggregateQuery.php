@@ -42,7 +42,7 @@ trait AggregateQuery
 
             $options = $this->getOptions();
             $subSql  = $this->options($options)
-                ->field('count(' . $field . ') AS think_count')
+                ->field('count(' . $field . ') AS xyh_count')
                 ->bind($this->bind)
                 ->buildSql();
 

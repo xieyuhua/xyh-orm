@@ -13,7 +13,7 @@ use xyh\db\BaseQuery as Query;
 
 /**
  * Class Model
- * @package think
+ * @package xyh
  * @mixin Query
  * @method void onAfterRead(Model $model) static after_read事件定义
  * @method mixed onBeforeInsert(Model $model) static before_insert事件定义

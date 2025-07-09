@@ -1150,7 +1150,7 @@ abstract class PDOConnection extends Connection
             [$distinct, $field] = explode(' ', $field);
         }
 
-        $field = $aggregate . '(' . (!empty($distinct) ? 'DISTINCT ' : '') . $this->builder->parseKey($query, $field, true) . ') AS think_' . strtolower($aggregate);
+        $field = $aggregate . '(' . (!empty($distinct) ? 'DISTINCT ' : '') . $this->builder->parseKey($query, $field, true) . ') AS xyh_' . strtolower($aggregate);
 
         $result = $this->value($query, $field, 0);
 

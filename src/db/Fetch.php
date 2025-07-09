@@ -53,7 +53,7 @@ class Fetch
     {
         $this->query->parseOptions();
 
-        $field = $aggregate . '(' . $this->builder->parseKey($this->query, $field) . ') AS think_' . strtolower($aggregate);
+        $field = $aggregate . '(' . $this->builder->parseKey($this->query, $field) . ') AS xyh_' . strtolower($aggregate);
 
         return $this->value($field, 0, false);
     }
@@ -413,7 +413,7 @@ class Fetch
 
         if (!empty($options['group'])) {
             // 支持GROUP
-            $subSql = $this->query->field('count(' . $field . ') AS think_count')->buildSql();
+            $subSql = $this->query->field('count(' . $field . ') AS xyh_count')->buildSql();
             $query  = $this->query->newQuery()->table([$subSql => '_group_count_']);
 
             return $query->fetchsql()->aggregate('COUNT', '*');

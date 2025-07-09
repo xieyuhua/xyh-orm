@@ -39,7 +39,7 @@ trait ParamsBind
      */
     public function bindValue($value, int $type = null, string $name = null)
     {
-        $name = $name ?: 'ThinkBind_' . (count($this->bind) + 1) . '_' . mt_rand() . '_';
+        $name = $name ?: 'XyhBind_' . (count($this->bind) + 1) . '_' . mt_rand() . '_';
 
         $this->bind[$name] = [$value, $type ?: PDO::PARAM_STR];
         return $name;
