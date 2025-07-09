@@ -1,6 +1,8 @@
 {
+  "type": "library",
   "name": "xieyuhua/xyh-orm",
   "description": "xyh orm",
+  "homepage": "https://github.com/xieyuhua/xyh-orm",
   "keywords": [
       "orm",
       "database"
