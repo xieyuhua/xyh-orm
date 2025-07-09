@@ -106,7 +106,8 @@ class Oracle extends Builder
         if (isset($table)) {
             $key = '"' . $table . '".' . $key;
         }
-
+        // oracle 字段和表名 转 大写
+        $key = strtoupper($key);
         return $key;
     }
 
